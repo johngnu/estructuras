@@ -9,12 +9,12 @@ public class Album {
     private String titulo;
     private String nombreProductos;
     private Artista a;
-    private ColaCancion ca;
+    private colaCancion ca;
 
     public Album() {
     }
 
-    public Album(String titulo, String nombreProductos, Artista a, ColaCancion ca) {
+    public Album(String titulo, String nombreProductos, Artista a, colaCancion ca) {
         this.titulo = titulo;
         this.nombreProductos = nombreProductos;
         this.a = a;
@@ -49,11 +49,11 @@ public class Album {
         this.a = a;
     }
 
-    public ColaCancion getCa() {
+    public colaCancion getCa() {
         return ca;
     }
 
-    public void setCa(ColaCancion ca) {
+    public void setCa(colaCancion ca) {
         this.ca = ca;
     }
 
