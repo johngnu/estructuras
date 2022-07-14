@@ -35,13 +35,24 @@ public class Principal {
 
         // pila album
         pilaAlbum pa = new pilaAlbum(5);
-        //pa.adiPila(a1);
+        pa.adiPila(a1);
         pa.adiPila(a2);
-        pa.mostrarPila();
+        //pa.mostrarPila();
+        System.out.println("A) ... ");
+        mostrarCancionesArtista(pa, "Bony Lovy");
     }
-    
-    public static void mostrarCancionesArtista(String x) {
-        
+
+    public static void mostrarCancionesArtista(pilaAlbum pa, String xa) {
+        pilaAlbum paux = new pilaAlbum(pa.max);
+        Album x;
+        while (!pa.esVacia()) {
+            x = pa.eliPila();
+            if (x.getA().getNombreArtista().equals(xa)) {
+                x.mostrarAlbum();
+            }
+            paux.adiPila(x);
+        }
+        pa.vaciarPila(paux);
     }
 
 }
