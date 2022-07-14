@@ -12,7 +12,7 @@ public class Artista {
     public Artista() {
     }
 
-    public Artista(String nombreArtista, Strign correo) {
+    public Artista(String nombreArtista, String correo) {
         this.nombreArtista = nombreArtista;
         this.correo = correo;
     }
