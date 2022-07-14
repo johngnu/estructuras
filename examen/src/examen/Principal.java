@@ -40,6 +40,12 @@ public class Principal {
         //pa.mostrarPila();
         System.out.println("A) ... mostrar solo canciones del artista x ");
         mostrarCancionesArtista(pa, "Bony Lovy");
+        
+        System.out.println("B) ... eliminar canciones del genro y titulo album y ");
+        eliminarCanciones(pa, "cumbia", "Por Bolivia");
+        
+        // volver a mostrar para ver que se elimino
+        mostrarCancionesArtista(pa, "Bony Lovy");
     }
 
     public static void mostrarCancionesArtista(pilaAlbum pa, String xa) {
@@ -49,6 +55,27 @@ public class Principal {
             x = pa.eliPila();
             if (x.getA().getNombreArtista().equals(xa)) {
                 x.getCa().mostrarColaSimple();
+            }
+            paux.adiPila(x);
+        }
+        pa.vaciarPila(paux);
+    }
+
+    public static void eliminarCanciones(pilaAlbum pa, String z, String y) {
+        pilaAlbum paux = new pilaAlbum(pa.max);
+        Album x;
+        while (!pa.esVacia()) {
+            x = pa.eliPila();
+            if (x.getTitulo().equals(y)) {
+                colaCancion caux = new colaCancion(x.getCa().max);
+                Cancion xc;
+                while (!x.getCa().esVacia()) {
+                    xc = x.getCa().eliCola();
+                    if (!xc.getGenero().equals(z)) {
+                        caux.adiCola(xc);
+                    }
+                }
+                x.getCa().vaciar(caux);
             }
             paux.adiPila(x);
         }
