@@ -38,7 +38,7 @@ public class Principal {
         pa.adiPila(a1);
         pa.adiPila(a2);
         //pa.mostrarPila();
-        System.out.println("A) ... ");
+        System.out.println("A) ... mostrar solo canciones del artista x ");
         mostrarCancionesArtista(pa, "Bony Lovy");
     }
 
@@ -48,7 +48,7 @@ public class Principal {
         while (!pa.esVacia()) {
             x = pa.eliPila();
             if (x.getA().getNombreArtista().equals(xa)) {
-                x.mostrarAlbum();
+                x.getCa().mostrarColaSimple();
             }
             paux.adiPila(x);
         }
