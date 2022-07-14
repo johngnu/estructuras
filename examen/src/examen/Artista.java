@@ -17,6 +17,10 @@ public class Artista {
         this.correo = correo;
     }
 
+    public void mostrarArtista() {
+        System.out.println("Nombre: " + nombreArtista + " Correo: " + correo);
+    }
+
     public String getNombreArtista() {
         return nombreArtista;
     }

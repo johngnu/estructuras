@@ -11,7 +11,9 @@ public class Principal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("hola mundo...");
+        Artista a1 = new Artista("Maluma", "bebito@mail.com");
+        
+        a1.mostrarArtista();
     }
     
 }
