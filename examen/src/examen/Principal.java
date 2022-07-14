@@ -14,6 +14,10 @@ public class Principal {
         Artista a1 = new Artista("Maluma", "bebito@mail.com");
         
         a1.mostrarArtista();
+        
+        Cancion c1 = new Cancion("Don't cry", "rock");
+        
+        c1.mostrarCancion();
     }
     
 }
