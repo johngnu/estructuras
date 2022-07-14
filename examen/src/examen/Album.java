@@ -22,7 +22,10 @@ public class Album {
     }
 
     public void mostrarAlbum() {
-
+        System.out.println("Datos del album .... ");
+        System.out.println("Titulo: " + titulo + " Nombre Prod:" + nombreProductos);
+        a.mostrarArtista();
+        ca.mostrarColaSimple();
     }
 
     public String getTitulo() {
