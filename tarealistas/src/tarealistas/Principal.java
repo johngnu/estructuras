@@ -16,7 +16,7 @@ public class Principal {
         Materia m4 = new Materia("mat-114", "algebra");
         // materias para juan
         Materias ms1 = new Materias(m1, 20, 20, 20, 5);
-        Materias ms2 = new Materias(m2, 10, 20, 20, 0);
+        Materias ms2 = new Materias(m2, 10, 20, 20, 10);
         Materias ms3 = new Materias(m3, 15, 20, 20, 5);
         Materias ms4 = new Materias(m4, 20, 20, 20, 1);
         // materias para ana
