@@ -20,7 +20,7 @@ public class Principal {
         Materias ms3 = new Materias(m3, 15, 20, 20, 5);
         Materias ms4 = new Materias(m4, 20, 20, 20, 1);
         // materias para ana
-        Materias ms5 = new Materias(m1, 20, 20, 20, 5);
+        Materias ms5 = new Materias(m1, 20, 0, 20, 5);
         Materias ms6 = new Materias(m2, 10, 10, 10, 5);
 
         ListaDM ldm1 = new ListaDM();
@@ -39,7 +39,7 @@ public class Principal {
         //e1.mostrar();
         //e2.mostrar();
         listaSE lse = new listaSE();
-        lse.adiFinalLista(e2);
+        lse.adiFinalLista(e1);
         lse.adiFinalLista(e2);
         lse.mostrarListaSimple();
 
