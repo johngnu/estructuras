@@ -60,7 +60,8 @@ public class listaSE {
         Estudiante x;
         while (q != null) {
             x = q.getDato();
-            System.out.print(" " + x);
+            //System.out.print(" " + x);
+            x.mostrar();
             q = q.getSig();
         }
         System.out.println(" -- null");

@@ -22,7 +22,8 @@ public class Estudiante {
     }
 
     public void mostrar() {
-        System.out.println("nombre: " + nombre + " semestre: " + semestre);
+        System.out.println("\n*************************************");
+        System.out.println("nombre: " + nombre + " semestre: " + semestre + " gestion: " + gestion);
         lsm.mostrarLD();
     }
 
