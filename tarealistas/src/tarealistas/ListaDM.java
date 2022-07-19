@@ -85,7 +85,8 @@ public class ListaDM {
     public void mostrarLD() {
         NodoM q = getP();
         while (q != null) {
-            System.out.print(" " + q.getDato());
+            //System.out.print(" " + q.getDato());
+            q.getDato().mostrar();
             q = q.getSig();
         }
         System.out.println(" -- null");
