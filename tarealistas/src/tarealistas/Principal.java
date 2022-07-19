@@ -41,21 +41,26 @@ public class Principal {
         listaSE lse = new listaSE();
         lse.adiFinalLista(e1);
         lse.adiFinalLista(e2);
+        
         lse.mostrarListaSimple();
 
         //lse.eliFinalLSC();
-        lse.mostrarListaSimple();
+        //lse.mostrarListaSimple();
 
         //Inciso a)
-        Buscar(lse, "juan");
+        System.out.println("\n A) =======================  ");
+        Buscar(lse, "ana");
 
         //Inciso b)
+        System.out.println("\n B) =======================  ");
         BuscarMateria(lse, "inf-131");
 
         //Inciso c)
+        System.out.println("\n C) =======================  ");
         MayorNota(lse);
 
         //Inciso d)
+        System.out.println("\n D) =======================  ");
         MayorNotaMateria(lse, "lab-131");
 
     }
