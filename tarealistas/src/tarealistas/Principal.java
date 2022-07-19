@@ -18,7 +18,7 @@ public class Principal {
         Materias ms1 = new Materias(m1, 20, 20, 20, 5);
         Materias ms2 = new Materias(m2, 10, 20, 20, 10);
         Materias ms3 = new Materias(m3, 15, 20, 20, 5);
-        Materias ms4 = new Materias(m4, 20, 20, 20, 1);
+        Materias ms4 = new Materias(m4, 0, 20, 20, 1);
         // materias para ana
         Materias ms5 = new Materias(m1, 20, 0, 20, 5);
         Materias ms6 = new Materias(m2, 10, 10, 10, 5);
@@ -49,7 +49,7 @@ public class Principal {
 
         //Inciso a)
         System.out.println("\n A) =======================  ");
-        Buscar(lse, "ana");
+        Buscar(lse, "juan");
 
         //Inciso b)
         System.out.println("\n B) =======================  ");
